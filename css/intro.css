@@ -1,0 +1,364 @@
+.main-article {
+    height: auto;
+    margin-top: 50px;
+    background-color: #f8f8f8;
+}
+
+.article-title {
+    padding: 15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.article-content {
+    padding: 25px;
+}
+
+.img1 {
+    padding: 25px;
+}
+
+.sitebottom {
+    margin-top: 100px;
+    width: 100%;
+    height: 100px;
+    background-color: #552583;
+    color: white;
+    text-align: center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.commentsarea {
+    height: auto;
+    margin-top: 50px;
+    background-color: #f8f8f8;
+}
+.inputarea {
+    margin-top: 20px;
+}
+
+
+body {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@media (max-width: 768px) {
+    .bg-white {
+        background-color: #fff;
+    }
+    
+    .bg-black {
+        background-color: #000;
+    }
+    
+    .bg-f2f2f2 {
+        background-color: #f2f2f2;
+    }
+    
+    .bg-f8f8f8 {
+        background-color: #f2f2f2;
+    }
+    
+    .bg-7FC3FF {
+        background-color: #7FC3FF;
+    }
+    
+    .color-black {
+        color: #000;
+    }
+    .color-white {
+        color: white;
+    }
+    
+    .color-777777 {
+        color: #777777;
+    }
+
+    .bg-FDB927 {
+        background-color: #FDB927;
+    }
+    .bg-552583 {
+        background-color: #552583;
+    }
+    #menu1{
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .com-hidden{
+        visibility: hidden;
+    }
+}
+
+
+
+
+
+
+body{
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+}
+.menu_basketball{
+    height: 126px;
+    width: 126px;
+      position: fixed;
+      border-radius: 99em;
+      border: 13px solid #c4c4c4;
+      margin-top:76px;
+      margin-left: 76px;
+      z-index: 5;
+      animation-name: turn-back;
+      animation-duration: 1.5s;
+      display: inline-block;
+      animation-fill-mode:forwards;
+  }
+  @keyframes turn-back {
+      0% {
+          transform: rotate(0deg);
+      }
+      100% {
+          transform: rotate(-360deg);
+      }
+  }
+  .menu_basketball:hover{ 
+      margin-top: 74px;
+      margin-left: 74px;
+      border: 15px solid #dadada;
+      animation-name: turn;
+      animation-duration: 1.5s;
+      display: inline-block;
+  }
+  @keyframes turn {
+      0% {
+          transform: rotate(0deg);
+      }
+      100% {
+          transform: rotate(360deg);
+      }
+  }
+  
+  /*摸球會觸發*/
+  .menu_basketball:hover + .menu_field_home{
+      display:block;
+      background-color: #999999;
+      border: 10px solid #c4c4c4;
+      animation-name: down1;
+      animation-duration: 1.5s;
+      display: inline-block;
+      animation-fill-mode:forwards;
+  }
+  @keyframes down1 {
+      0% {
+          width: 60px;
+          height: 0px;
+          line-height: 0px;
+          margin-left: 110px;
+      }
+      100% {
+          height: 120px;
+          margin-top: 160px;
+          border-radius: 0 0 99px 99px;
+      }
+  }
+  .menu_basketball:hover ~ .menu_field_introduction{
+      display:block;
+      background-color: #999999;
+      border: 10px solid #c4c4c4;
+      animation-name: down2;
+      animation-duration: 1.5s;
+      display: inline-block;
+      animation-fill-mode:forwards;
+  }
+  @keyframes down2 {
+      0% {
+          width: 60px;
+          height: 0px;
+          line-height: 0px;
+          margin-left: 110px;
+          margin-top: 113px;
+      }
+      100% {
+          height: 120px;
+          margin-top: 240px;
+          border-radius: 0 0 99px 99px;
+      }
+  }
+  .menu_basketball:hover ~ .menu_field_practice{
+      display:block;
+      background-color: #999999;
+      border: 10px solid #c4c4c4;
+      animation-name: down3;
+      animation-duration: 1.5s;
+      display: inline-block;
+      animation-fill-mode:forwards;
+  }
+  @keyframes down3 {
+      0% {
+          width: 60px;
+          height: 0px;
+          line-height: 0px;
+          margin-left: 110px;
+          margin-top: 113px;
+      }
+      100% {
+          height: 120px;
+          margin-top: 320px;
+          border-radius: 0 0 99px 99px;
+      }
+  }
+  .menu_basketball:hover ~ .menu_field_match{
+      display:block;
+      background-color: #999999;
+      border: 10px solid #c4c4c4;
+      animation-name: down4;
+      animation-duration: 1.5s;
+      display: inline-block;
+      animation-fill-mode:forwards;
+  }
+  @keyframes down4 {
+      0% {
+          width: 60px;
+          height: 0px;
+          line-height: 0px;
+          margin-left: 110px;
+          margin-top: 113px;
+      }
+      100% {
+          height: 120px;
+          margin-top: 400px;
+          border-radius: 0 0 99px 99px;
+      }
+  }
+  /*首頁鈕*/
+  .menu_field_home{
+      position: fixed;
+      width:100px;
+      height: 120px;
+      display: none;
+      margin-top: 160px;
+      margin-left: 90px;
+      text-decoration: none;
+      text-align: center;
+      line-height: 17.5vh;
+      z-index: 4; 
+      background-color: #999999;
+      border: 10px solid #c4c4c4;
+      border-radius: 0 0 99px 99px;
+      color: #fff;
+      font-size: 25px;
+  }
+  .menu_field_home:hover{
+      display: block;
+      background-color: #acacac;
+      border: 10px solid #dadada;
+      height: 120px;
+      width: 104px;
+      margin-top: 160px;
+      margin-left: 88px;
+      font-weight: bold;
+      line-height: 17.5vh;
+  }
+  /*介紹鈕*/
+  .menu_field_introduction{
+      position: fixed;
+      width:100px;
+      height: 120px;
+      display: none;
+      margin-top: 240px;
+      margin-left: 90px;
+      text-decoration: none;
+      text-align: center;
+      line-height: 17.5vh;
+      z-index: 3;
+      background-color: #999999;
+      border: 10px solid #c4c4c4;
+      border-radius: 0 0 99px 99px;
+      color: #fff;
+      font-size: 25px;
+  }
+  .menu_field_introduction:hover{
+      display:block;
+      background-color: #acacac;
+      border: 10px solid #dadada;
+      height: 200px;
+      width: 104px;
+      margin-top: 160px;
+      margin-left: 88px;
+      font-weight: bold;
+      line-height: 35.25vh;
+  }
+  
+  /*訓練鈕*/
+  .menu_field_practice{
+      position: fixed;
+      width:100px;
+      height: 120px;
+      display: none;
+      margin-top: 320px;
+      margin-left: 90px;
+      text-decoration: none;
+      text-align: center;
+      line-height: 17.5vh;
+      z-index: 2;
+      background-color: #999999;
+      border: 10px solid #c4c4c4;
+      border-radius: 0 0 99px 99px;
+      color: #fff;
+      font-size: 25px;
+  }
+  .menu_field_practice:hover{
+      display:block;
+      background-color: #acacac;
+      border: 10px solid #dadada;
+      height: 280px;
+      width: 104px;
+      margin-top: 160px;
+      margin-left: 88px;
+      font-weight: bold;
+      line-height: 53vh;;
+  }
+  
+  
+  /*賽事*/
+  .menu_field_match{
+      position: fixed;
+      width:100px;
+      height: 120px;
+      display: none;
+      margin-top: 400px;
+      margin-left: 90px;
+      text-decoration: none;
+      text-align: center;
+      line-height: 17.5vh;
+      z-index: 1;
+      background-color: #999999;
+      border: 10px solid #c4c4c4;
+      border-radius: 0 0 99px 99px;
+      color: #fff;
+      font-size: 25px;
+  }
+  .menu_field_match:hover{
+      display:block;
+      background-color: #acacac;
+      border: 10px solid #dadada;
+      height: 360px;
+      width: 104px;
+      margin-top: 160px;
+      margin-left: 88px;
+      font-weight: bold;
+      line-height: 70.75vh;
+  }
+  
+  #menu1:hover > a{
+      display: block;
+  }
