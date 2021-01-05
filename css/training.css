@@ -287,6 +287,8 @@ body{
       margin-left: 88px;
       font-weight: bold;
       line-height: 17.5vh;
+      color: #fff;
+      text-decoration: none;
   }
   /*介紹鈕*/
   .menu_field_introduction{
@@ -316,6 +318,8 @@ body{
       margin-left: 88px;
       font-weight: bold;
       line-height: 35.25vh;
+      color: #fff;
+      text-decoration: none;
   }
   
   /*訓練鈕*/
@@ -346,6 +350,8 @@ body{
       margin-left: 88px;
       font-weight: bold;
       line-height: 53vh;;
+      color: #fff;
+      text-decoration: none;
   }
   
   
@@ -377,8 +383,10 @@ body{
       margin-left: 88px;
       font-weight: bold;
       line-height: 70.75vh;
+      color: #fff;
+      text-decoration: none;
   }
   
-  #menu1:hover > a {
+  #menu1:hover > a{
       display: block;
   }
