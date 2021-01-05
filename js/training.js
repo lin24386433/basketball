@@ -1,5 +1,5 @@
 var db = firebase.firestore();
-var introComment = db.collection('intro-comment');
+var introComment = db.collection('training-comment');
 introComment.orderBy("time", "desc");
 
 var commentBox = document.getElementById('commentbox');
