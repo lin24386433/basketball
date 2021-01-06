@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BAS Kit BO</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="Shortcut Icon" type="image/x-icon" href="./images/basketball-ball.png" />
+	<link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+	<script src="https://unpkg.com/jquery@3.4.1/dist/jquery.min.js"></script>
+	<script src="https://unpkg.com/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<nav class="navbar bg-552583 com-hidden">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynav">
+				<span class="icon-bar bg-white"></span>
+				<span class="icon-bar bg-white"></span>
+				<span class="icon-bar bg-white"></span>
+			</button>
+		</div>
+
+		<div id="mynav" class="navbar-collapse collapse">
+			<ul class="navbar-nav nav color-black">
+				<li><a href="#" class="color-white">首頁</a></li>
+				<li><a href="intro.html" class="color-white">介紹</a></li>
+				<li><a href="training.html" class="color-white">訓練</a></li>
+				<li><a href="#" class="color-white">賽事</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="prompt"><p>按一下</p></div>
+    <!--籃球-->
+    <div class="menu" id="menu1">
+		<img class="menu_basketball" src="./images/menu_basketball.jpg" onclick="sound1play()" alt="">
+		<a class="menu_field_home" , href="index.html">首頁</a>
+		<a class="menu_field_introduction" onclick="sound1play()" href="intro.html">介紹</a>
+		<a class="menu_field_practice" onclick="sound1play()" href="training.html">訓練</a>
+		<a class="menu_field_match" onclick="sound1play()" href="match.html">賽事</a>
+	</div>
+	<!--文案-->
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-1"></div>
+			<div class="col-xs-10">
+				<div class="title_1"><P>既然你有兩隻手</P></div>
+				<div class="title_2"><p>為什麼不一次打兩顆球？</p></div>
+				
+			</div>
+			<div class="col-xs-1"></div>
+		</div>
+	</div>
+	
+	
+	
+	<img class="gif" src="./images/twohands.gif" alt="" >
+	
+	
+	<div class="sitebottom">
+		<p>國立臺北教育大學數位科技設計學系二年甲班110819003林郁盛110819006林緯宸創作<br>翻印必究    版權所有</p>
+	</div>
+
+	
+	
+    
+	
+	<script>
+	    function sound1play(){ 
+        var sound1 = new Audio(); 
+        sound1.src = "sounds/click.mp3"; 
+		sound1.play(); 
+	}
+	    
+	</script>
+</body>
+</html>
