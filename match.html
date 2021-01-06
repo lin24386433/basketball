@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BAS Kit BO - Match</title>
+	<link rel="stylesheet" href="css/match.css">
+	<link rel="Shortcut Icon" type="image/x-icon" href="./images/basketball-ball.png" />
+	<link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+	<script src="https://unpkg.com/jquery@3.4.1/dist/jquery.min.js"></script>
+	<script src="https://unpkg.com/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar bg-552583 com-hidden">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynav">
+                <span class="icon-bar bg-white"></span>
+                <span class="icon-bar bg-white"></span>
+                <span class="icon-bar bg-white"></span>
+            </button>
+        </div>
+
+        <div id="mynav" class="navbar-collapse collapse">
+            <ul class="navbar-nav nav color-black">
+                <li><a href="index.html" class="color-white">首頁</a></li>
+                <li><a href="intro.html" class="color-white">介紹</a></li>
+                <li><a href="training.html" class="color-white">訓練</a></li>
+                <li><a href="match.html" class="color-white">賽事</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--籃球-->
+    <div class="menu" id="menu1">
+		<img class="menu_basketball" src="./images/menu_basketball.jpg" onclick="sound1play()" alt="">
+		<a class="menu_field_home" , href="index.html">首頁</a>
+		<a class="menu_field_introduction" onclick="sound1play()" href="intro.html">介紹</a>
+		<a class="menu_field_practice" onclick="sound1play()" href="training.html">訓練</a>
+		<a class="menu_field_match" onclick="sound1play()" href="match.html">賽事</a>
+	</div>
+	<!--文案-->
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-2"></div>
+			<div class="col-xs-8">
+                <div class="whitebackground" style="height: auto; background-color: #f8f8f8; margin-top: 50px;">
+                    <div class="title">籃球聯賽</div>
+                    <div class="nba" style=" color: #000; padding: 25px;">
+                        <p>1.NBA<br>國家籃球協會（英語：National Basketball Association，縮寫：NBA）是北美的男子職業籃球聯盟，由30支球隊組成（29支在美國以及1支在加拿大），分屬兩個聯盟（Conference）：東區聯盟和西區聯盟；而每個聯盟各由三個分組（Division）組成，每個分組有五支球隊。NBA是四大北美職業體育聯賽之一，並被視為全世界水準最高的男子職業籃球賽事。NBA前身是1946年於紐約成立的美國籃球協會（BAA），1949年和國家籃球聯盟（NBL）合併後改為現名。聯盟總部位於曼哈頓中城，現任總裁為亞當·蕭華。<br><br>
+                        NBA正式賽季於每年10月中開始，分為例行賽、季後賽兩大部分。例行賽為循環賽制，每支球隊都要完成82場比賽；例行賽到次年的4月結束，每個聯盟的前八名將有資格進入接下來進行的季後賽。季後賽採用七戰四勝賽制，共分四輪；季後賽的最後一輪也稱為總決賽，由兩個聯盟的冠軍爭奪NBA的最高榮譽──總冠軍。整個NBA賽季當中，例行賽完結之後聯盟冠軍及分區冠軍不設獎盃，只給予得獎球隊錦旗一個，但聯盟冠軍及總冠軍均設有獎盃加錦旗。</p>
+                    </div>
+                    <a href="https://www.nba.com/?27">
+                        <img class="logo_nba img-responsive" src="./images/nba.jpg" alt="" style="width: 20vw; margin: auto;" >
+                    </a>
+                    <div class="eurocup" style=" color: #000; padding: 25px;">
+                        <p>
+                            2.Euroleague<br>歐洲籃球聯賽（Euroleague，簡稱EL），原名「歐洲籃球冠軍杯」（European Champions' Cup），是歐洲最大規模的跨國男子職業籃球聯賽，創立於1957年，現有來自歐洲18個國家的24支球隊參加。歐洲籃球冠軍杯原由國際籃球聯合會舉辦，但在2000年，一些頂級歐洲籃球俱樂部自行成立了歐洲籃球聯賽聯盟，接管了歐洲籃球冠軍杯，迫使國際籃聯另行舉辦FIBA超級聯賽，導致歐洲籃壇出現分裂，次年出現兩個冠軍。 2001年，國際籃聯同ULEB妥協，將超級聯賽併入冠軍杯，改名為歐洲籃球聯賽，此後國際籃聯專職組織國家隊比賽，退出俱樂部際比賽組織活動。歐洲籃球聯賽歷史上，獲得冠軍次數最多的是西班牙的皇家馬德里，共曾10次奪冠；其次是俄羅斯的莫斯科中央陸軍籃球俱樂部，曾經8次稱王。
+                        </p>
+                    </div>
+                    <a href="https://www.euroleague.net/">
+                        <img class="logo_euroleague img-responsive" src="./images/Euroleague.jpg" alt="" style="width: 40vw; margin: auto;">
+                    </a>
+                    <div class="cba" style=" color: #000; padding: 25px;">
+                        <p>3.CBA<br>中國男子籃球職業聯賽是由中國籃球協會所主辦的跨年度主客場制籃球聯賽，聯賽為中華人民共和國最高等級的籃球職業聯賽，英文是Chinese Basketball Association（中國籃球協會），縮寫為CBA，中文媒體上也多用CBA來稱呼這些聯賽。聯賽在1995/96賽季由555香菸取得聯賽的冠名權，1996/97賽季到2000/01賽季為希爾頓中國男子籃球甲級聯賽，之後摩托羅拉和聯通新時空分別取得過聯賽的冠名權，聯賽在2005年正式更名為現在的中國男子籃球職業聯賽。
+
+                            聯賽自每年的10月或11月開始至次年的4月左右結束，長度和美國的NBA相仿，2001年曾吸收了台灣的新浪獅隊，2002年香港的香港飛龍隊也曾參加聯賽，目前聯賽的球隊數目為20支。<br><br>聯賽2005年從中國籃球甲級聯賽正式更名為現在的中國男子籃球職業聯賽，聯賽的規模、管理、運作和受關注程度都堪稱是中國最好最規範的職業聯賽，同時也是亞洲地區水平最高的籃球聯賽。
+                            
+                            2005/06賽季前，中國籃球管理中心引入採用准入制度，給各俱樂部出具了籃球職業聯賽准入資格要求，也就是所謂的29條軍規。內容涉及俱樂部制度、機構設置、比賽場館設施、財務制度、參賽保證金、球隊建設等12個方面。准入制最核心部分就是俱樂部必須提供2000萬元人民幣註冊資金及700萬元人民幣參賽保證金，而700萬元保證金可以由200萬元現金和500萬元的固定資產組成。</p>
+                    </div>
+                    <a href="https://www.cbaleague.com/#/">
+                        <img class="logo_cba img-responsive" src="./images/CBA.jpg" alt=""style="width: 20vw; margin: auto;">
+                    </a>
+                    <div class="NBL" style=" color: #000; padding: 25px;">
+                        <p>4.NBL<br>聯賽始於1979年，賽事通常在夏季舉行（4月 - 9月），這一模式沿襲了20年直到1998年。在1998/99賽季聯賽在上個賽季結束一個月後的10月開始，賽制也變成了現在的冬季模式（10月 - 4月）。這一改變是為了試圖避免和澳洲廣受關注的澳式足球比賽時間的衝突。
+
+                            聯賽目前擁有8支參賽球隊，基本包含了澳洲的首府城市（除坎培拉、荷巴特和達爾文外）以及多個地區中心，如凱恩斯、沃隆岡和一支來自紐西蘭奧克蘭的球隊。墨爾本地區的第二支俱樂部，南方猛龍在2006/07賽季加入了聯賽。澳洲國家籃球聯賽在2006/07賽季吸收了新加坡騰飛之獅俱樂部的加盟，也成為第一個將球隊擴充到亞洲地區的澳洲運動聯盟。在2006年11月21日，聯盟宣布設在黃金海岸的新球隊黃金海岸烈焰將在2007/08賽季進入聯賽成為聯賽第13支球隊。
+                            
+                            聯盟發展最好的年景是在1980年代末至1990年代初，但是這些年聯盟許多球隊縮小球場規模去解決財政問題。一些俱樂部解散或者退出了聯盟。面對這些問題，2004/05賽季開始階段和福克斯體育簽訂了一份新的電視轉播合同，並且和電子產品生產商飛利浦集團簽訂了一份多年的贊助協議。聯盟之前的最大讚助商是三菱汽車，由於賽制轉至夏天，缺少資金，聯盟也曾接近倒閉。</p>
+                    </div>
+                    <a href="https://nbl.com.au/">
+                        <img class="logo_nbl img-responsive" src="./images/NBL.jpg" alt=""style="width: 20vw; margin: auto;">
+                    </a>
+                </div>
+
+                <div class="commentsarea" style="margin-top: 50px; background-color: #f2f2f2;">
+                    <div style="font-size: 36px; font-weight: bold; text-align: center; padding-top: 20px;">
+                        留言區
+                    </div>
+                    <div class="inputarea">
+                        <form name='form' id='form'>
+                            <div>
+                                <p style="margin-left: 10px;">姓名：</p>
+                                <input required type='text' name='name' id='name' style="margin-left: 10px;" /> 
+                            </div>
+                            <br>
+                            <div>
+                                <p style="margin-left: 10px;">想說的話：</p>
+                                <textarea name="comment" id='comment' rows="6" cols="35" required style="margin-left: 10px;"></textarea>
+                            </div>
+                            <br>
+                            <input type='button' name='submit' value='送出' onclick="processFormData()" style="margin-left: 10px;" />
+                        </form>
+                    </div>
+                    <div class="comments-display">
+                        <div id="allcomments" style="font-size: 20px; text-align: center; padding-top: 20px;">
+                            所有留言
+                        </div>
+                        
+                        <div id="commentbox" style="padding-top: 20px;">
+                            <!--
+                            <div style='display: flex;'>
+                                <img src='images/basketball-ball.png' style='width: 50px; height:50px; margin-left: 10px;'>
+                                <div class='comment-reuse' style='margin-left: 10px; '>
+                                    <p style='font-weight: bold;'>UserName</p>
+                                    <br>
+                                    <p>Comment</p>
+                                </div>
+                            </div>
+                            <div style='width:100%; height:1px; background-color: #000; margin-bottom: 15px;'></div>
+                            
+                            <div style='display: flex;'>
+                                <img src='images/basketball-ball.png' style='width: 50px; height:50px; margin-left: 10px;'>
+                                <div class='comment-reuse' style='margin-left: 10px; '>
+                                    <p style='font-weight: bold;'>UserName</p>
+                                    <br>
+                                    <p>Comment</p>
+                                </div>
+                            </div>
+                            <div style='width:100%; height:1px; background-color: #000; margin-bottom: 15px;'></div>
+                            -->
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+			</div>
+            <div class="col-xs-2"></div>
+		</div>
+	</div>
+    
+    <div class="sitebottom">
+        <p>國立臺北教育大學數位科技設計學系二年甲班110819003林郁盛110819006林緯宸創作<br>翻印必究    版權所有</p>
+    </div>
+
+    <!-- FireBase -->
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+        <!-- 引入 firestore 函式庫 -->
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+
+        <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyCqJf1TuN5usfm5a1Yg4DGKIGYP6OY56EY",
+            authDomain: "baskitbo.firebaseapp.com",
+            projectId: "baskitbo",
+            storageBucket: "baskitbo.appspot.com",
+            messagingSenderId: "284319147461",
+            appId: "1:284319147461:web:f1a106623535c2cada17ac",
+            measurementId: "G-EM78ZYQDYB"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+
+        
+
+        </script>
+        <script src="js/match.js"></script>
+
+
+	<script>
+	    function sound1play(){ 
+        var sound1 = new Audio(); 
+        sound1.src = "sounds/click.mp3"; 
+		sound1.play(); 
+		console.log("444");
+	}    
+	</script>
+</body>
+</html>
